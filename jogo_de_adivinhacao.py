@@ -10,9 +10,9 @@ contador_para_resultado = 0
 
 numero_secreto = random.randint(1,100)
 
-nome_usuario = input("Qual o seu nome?")
+nome_usuario = input("Qual o seu nome?\n")
 
-nivel = input("Qual o nivel?")
+nivel = input("Qual o nivel?\n")
 
 nivel_do_jogo = int (nivel)
 
@@ -52,7 +52,9 @@ for i in range(0,tentativas):
   else:
     print(f'{nome_usuario} você errou o número secreto!')
     
-    print(f'{nome_usuario} O numero correto era {numero_secreto}!')
+    #Linha de código comentada a seguir foi ultilizada para fazer o teste do encerramento instataneo
+     
+    #print(f'{nome_usuario} O numero correto era {numero_secreto}!')
     
     #acertou = False
     
