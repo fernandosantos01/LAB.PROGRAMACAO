@@ -18,10 +18,10 @@ nivel_do_jogo = int (nivel)
 
 if(nivel_do_jogo == 1):
   tentativas = 3
-  if(nivel_do_jogo == 2):
-    tentativas = 5
-    if(nivel_do_jogo == 3):
-      tentativas = 6
+if(nivel_do_jogo == 2):
+  tentativas = 5
+if(nivel_do_jogo == 3):
+  tentativas = 6
 
 contador_para_chances = tentativas
 
