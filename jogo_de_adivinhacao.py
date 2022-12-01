@@ -27,7 +27,7 @@ contador_para_chances = tentativas
 
 for i in range(0,tentativas):
 
-  print(f'Seu numero de chances é {contador_para_chances}')
+  print(f'\nSeu numero de chances é {contador_para_chances}\n')
   contador_para_chances = contador_para_chances -1
 
   #Serve para contabilizar o numero de chances restantes do usuário
@@ -35,13 +35,13 @@ for i in range(0,tentativas):
   
 #while(acertou not)
   
-  palpite_usuario = input("Qual o seu palpite ?")
+  palpite_usuario = input("Qual o seu palpite ?\n")
 
   #Essa linha de codigo serve para a conversão de string para   tipo inteiro 
   palpite = int(palpite_usuario)
 
     #A letra 'f' serve para melhorar a formatação
-  print(f'O usuario {nome_usuario} deu o palpite {palpite}')
+  print(f'\nO usuario {nome_usuario} deu o palpite {palpite}\n')
     
   if(palpite == numero_secreto):
     print(f'{nome_usuario} você acertou o número       {numero_secreto}')
@@ -50,7 +50,7 @@ for i in range(0,tentativas):
     #acertou = True
 
   else:
-    print(f'{nome_usuario} você errou o número secreto!')
+    print(f'{nome_usuario} você errou o número secreto!\n')
     
     #Linha de código comentada a seguir foi ultilizada para fazer o teste do encerramento instataneo
      
@@ -59,11 +59,11 @@ for i in range(0,tentativas):
     #acertou = False
     
   if(palpite<numero_secreto):
-    print(f'{nome_usuario} Você errou pra baixo, Portanto digite um numero maior')
+    print(f'{nome_usuario} Você errou pra baixo, Portanto digite um numero maior\n')
 
   else:
-    print(f'Você errou para cima, Portanto digite um numero menor')
+    print(f'Você errou para cima, Portanto digite um numero menor\n')
 
   if(contador_para_resultado==tentativas):
-    print(f'{nome_usuario} O numero correto era {numero_secreto}!')
+    print(f'{nome_usuario} O numero correto era {numero_secreto}!\n')
     
