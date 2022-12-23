@@ -77,6 +77,7 @@ while True:
         print(f'{nome_usuario} O numero correto era {numero_secreto}!')
       
     opcao = input ("Deseja continuar? [1 - Sim || 2 - Não]\n")
+    contador_para_resultado = 0
     opc = int(opcao)
     if(opc == 2):
       break
